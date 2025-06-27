@@ -1,8 +1,8 @@
 .cookie-banner-section {
-  background: #fff;
+  background: #e8e8e8;
   width: 100%;
   max-width: 375px;
-  padding: 20px 15px;
+  padding: 40px 16px;
   margin: 0 auto;
   position: fixed;
   bottom: 0;
@@ -14,24 +14,26 @@
 
   @include media(desktop) {
     max-width: 1440px;
-    padding: 36px 72px 36px 72px;
+    padding: 40px 108px;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
   }
 }
 
 .cookie-banner-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
   text-align: center;
-  color: #191c25;
-  margin-bottom: 22px;
+  color: #0b0e13;
+  margin-bottom: 20px;
 
   @include media(desktop) {
-    font-size: 24px;
+    font-size: 16px;
+    line-height: 1.5;
     text-align: left;
-    max-width: 745px;
+    max-width: 808px;
     margin-bottom: 0;
   }
 }
@@ -40,52 +42,48 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 24px;
 
   @include media(desktop) {
     display: flex;
     flex-direction: row;
-    gap: 24px;
   }
 }
 
 .cookie-accept-btn {
-  border: 1px solid #191c25;
-  border-radius: 36px;
-  padding: 18px 26px;
-  background: #37652d;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  border-radius: 8px;
+  padding: 16px 32px;
+  background: #2960a7;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
   font-size: 16px;
-  text-align: center;
-  color: #edfcff;
+  line-height: 1.5;
   text-transform: uppercase;
+  color: #fff;
   width: 100%;
-  max-width: 196px;
+  max-width: 343px;
 
   @include media(desktop) {
-    padding: 15px 26px;
-    width: 196px;
+    width: 184px;
   }
 }
 
 .cookie-decline-btn {
   border: 1px solid #000;
-  border-radius: 36px;
-  padding: 18px 26px;
+  border-radius: 8px;
+  padding: 16px 32px;
   background: transparent;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
   font-size: 16px;
-  text-align: center;
-  color: #191c25;
+  line-height: 1.5;
   text-transform: uppercase;
+  color: #000;
   width: 100%;
-  max-width: 196px;
+  max-width: 343px;
 
   @include media(desktop) {
-    padding: 15px 26px;
-    width: 196px;
+    width: 184px;
   }
 }
 
