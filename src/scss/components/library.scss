@@ -1,4 +1,4 @@
-.concept-section {
+.library-section {
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -8,18 +8,36 @@
   }
 }
 
-.concept-title-wrapper {
+.library-container {
+  padding: 0;
+}
+
+.library-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.library-text-wrapper {
+  padding: 0 16px;
+
+  @include media(desktop) {
+    padding-left: 88px;
+    padding-right: 0;
+  }
+}
+
+.library-title-wrapper {
   margin-bottom: 40px;
 
   @include media(desktop) {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
     margin-bottom: 80px;
   }
 }
 
-.concept-title {
+.library-title {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -30,12 +48,11 @@
   @include media(desktop) {
     font-size: 32px;
     line-height: 1.4375;
-    max-width: 508px;
-    margin-bottom: 0;
+    margin-bottom: 32px;
   }
 }
 
-.concept-text {
+.library-text {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -45,41 +62,34 @@
   @include media(desktop) {
     font-size: 16px;
     line-height: 1.5;
-    max-width: 616px;
   }
 }
 
-.concept-list {
+.library-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-
-  @include media(desktop) {
-    flex-direction: row;
-  }
 }
 
-.concept-list-item {
-  border: 1px solid #a9bca4;
-  border-radius: 8px;
-  padding: 32.5px 24px;
+.library-list-item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-
-  @include media(desktop) {
-    width: 100%;
-    max-width: 400px;
-  }
+  align-items: start;
+  gap: 12px;
 }
 
-.concept-item-text {
+.library-item-number {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #505050;
+}
+
+.library-item-text {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.57143;
-  text-align: center;
   color: #505050;
 
   @include media(desktop) {

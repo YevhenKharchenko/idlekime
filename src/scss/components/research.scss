@@ -1,0 +1,128 @@
+.research-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include media(desktop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.research-title-wrapper {
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 80px;
+  }
+}
+
+.research-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.36364;
+  color: #2f2f2f;
+  text-align: right;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    line-height: 1.4375;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+.research-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: #505050;
+
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.research-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.research-list-item {
+  display: flex;
+  align-items: center;
+
+  &:nth-child(2) {
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 292px;
+    min-height: 300px;
+    background: #fffefa;
+
+    .research-item-text {
+      color: #505050;
+    }
+  }
+
+  &:nth-child(4) {
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 292px;
+    min-height: 300px;
+    background: #839f7f;
+
+    .research-item-text {
+      color: #fff;
+    }
+  }
+
+  &:nth-child(5) {
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 292px;
+    min-height: 300px;
+    background: #192030;
+
+    .research-item-text {
+      color: #fff;
+    }
+  }
+
+  &:nth-child(7) {
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 292px;
+    min-height: 300px;
+    background: #fffefa;
+
+    .research-item-text {
+      color: #505050;
+    }
+  }
+}
+
+.research-item-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
+  margin-top: auto;
+
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
